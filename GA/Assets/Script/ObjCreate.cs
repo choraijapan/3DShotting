@@ -22,7 +22,7 @@ public class ObjCreate : MonoBehaviour {
             for (int i = 0; i < loop; i++) {
                 GameObject objData = (GameObject)Instantiate(obj);
                 objData.transform.localPosition = new Vector3(Random.Range(-5.0f, 5.0f),
-                        Random.Range(1.0f, 5.0f), Random.Range(13.0f, 14.0f));
+                        Random.Range(-20.0f, 25.0f), Random.Range(13.0f, 14.0f));
             }
         }
     }

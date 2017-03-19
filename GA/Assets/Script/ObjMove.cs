@@ -36,7 +36,7 @@ public class ObjMove : MonoBehaviour {
         }
         else
         {
-            point.z -= Time.deltaTime * 5.0f;
+           point.z -= Time.deltaTime * 2.0f;
 
             if ( point.x <= -0.5f )
             {
@@ -58,7 +58,7 @@ public class ObjMove : MonoBehaviour {
 
         if (point.y >= 5.0f)
         {
-            point.y = 5.0f;
+           // point.y = 5.0f;
         }
         transform.localPosition = point;
     }
