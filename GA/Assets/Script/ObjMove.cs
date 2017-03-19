@@ -49,9 +49,11 @@ public class ObjMove : MonoBehaviour {
             }
         }
 
+		//ゲーム終了条件
         if (point.z <= -9.1f)
         {
-            GameOver.GameOverFlag = true;
+			Destroy(gameObject);
+            //GameOver.GameOverFlag = true;
         }
 
         if (point.y >= 5.0f)
