@@ -8,13 +8,17 @@ public class ObjMove : MonoBehaviour {
 
     private bool dead = false;
     private float deadTimer = 0;
-    public int life = 1;
+    public int life = 150;
 
-//    void Start() { //追加
-//        audioSource = gameObject.GetComponent<AudioSource>(); //追加
-//        audioSource.clip = sEHit; //追加
-//    } //追加
+    //    void Start() { //追加
+    //        audioSource = gameObject.GetComponent<AudioSource>(); //追加
+    //        audioSource.clip = sEHit; //追加
+    //    } //追加
 
+    private void Start()
+    {
+        life = 150;
+    }
     void Update() {
         if (GameOver.GameOverFlag)
         {
@@ -36,7 +40,7 @@ public class ObjMove : MonoBehaviour {
         }
         else
         {
-           point.z -= Time.deltaTime * 2.0f;
+            point.z -= Time.deltaTime * 5.0f;
 
             if ( point.x <= -0.5f )
             {
@@ -49,18 +53,16 @@ public class ObjMove : MonoBehaviour {
             }
         }
 
-		//ゲーム終了条件
         if (point.z <= -9.1f)
         {
-			Destroy(gameObject);
-            //GameOver.GameOverFlag = true;
+            GameOver.GameOverFlag = true;
         }
 
         if (point.y >= 5.0f)
         {
-           // point.y = 5.0f;
+            point.y = 5.0f;
         }
-        transform.localPosition = point;
+       // transform.localPosition = point;
     }
 
     private void OnCollisionEnter(Collision collision) {
