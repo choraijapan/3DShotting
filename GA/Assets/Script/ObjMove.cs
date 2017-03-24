@@ -3,8 +3,8 @@ using System.Collections;
 
 public class ObjMove : MonoBehaviour {
 
-//    [SerializeField] private AudioClip sEHit; //追加
-//    private AudioSource audioSource; //追加
+    [SerializeField] private AudioClip sEHit; //追加
+    private AudioSource audioSource; //追加
 
     private bool dead = false;
     private float deadTimer = 0;
@@ -18,6 +18,8 @@ public class ObjMove : MonoBehaviour {
     private void Start()
     {
         life = 150;
+        audioSource = gameObject.GetComponent<AudioSource>();
+        audioSource.clip = sEHit;
     }
     void Update() {
         if (GameOver.GameOverFlag)
@@ -68,7 +70,7 @@ public class ObjMove : MonoBehaviour {
     private void OnCollisionEnter(Collision collision) {
         if (collision.gameObject.tag == "Player")
         {
-//            audioSource.Play(); //追加
+            audioSource.Play(); //追加
             life--;
             if (life <= 0)
             {
