@@ -12,6 +12,6 @@ public class VRCamera : MonoBehaviour {
 		Quaternion gattitude = Input.gyro.attitude;
 		gattitude.x *= -1;
 		gattitude.y *= -1;
-		//transform.localRotation = Quaternion.Euler(90, 0, 0) * gattitude;
+		transform.localRotation = Quaternion.Euler(90, 0, 0) * gattitude;
 	}
 } 
