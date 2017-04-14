@@ -104,6 +104,8 @@
     <Compile Include="Assets\Script\ShotControl.cs" />
     <Compile Include="Assets\Script\ShotMove.cs" />
     <Compile Include="Assets\Script\VRCamera.cs" />
+    <Compile Include="Assets\SimpleDogs\Demo\BtnScript.cs" />
+    <Compile Include="Assets\SimpleDogs\Demo\DogController.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\BattleDragon\Colosseum\Dust\ParticleSystems\ParticleSystemsGuidelines.txt" />
