@@ -18,8 +18,6 @@ public class ObjMove : MonoBehaviour {
     private void Start()
     {
         life = 150;
-        audioSource = gameObject.GetComponent<AudioSource>();
-        audioSource.clip = sEHit;
     }
     void Update() {
         if (GameOver.GameOverFlag)
@@ -70,7 +68,7 @@ public class ObjMove : MonoBehaviour {
     private void OnCollisionEnter(Collision collision) {
         if (collision.gameObject.tag == "Player")
         {
-            audioSource.Play(); //追加
+            //audioSource.Play(); //追加
             life--;
             if (life <= 0)
             {

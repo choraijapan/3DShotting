@@ -32,25 +32,17 @@ public class ShotControl : MonoBehaviour {
 //            audioSource.Play(); //追加
 
             Vector3 point = transform.localPosition;
-            //Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+			//Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
             // Shot at Screen Center
-            Ray ray = Camera.main.ScreenPointToRay(new Vector3(Screen.width / 2, Screen.height / 2, 0f));
+			Ray ray = Camera.main.ViewportPointToRay(new Vector3(0.5f, 0.5f, 0f));
+
+
             RaycastHit hit;
             Vector3 hitPoint;
             if (Physics.Raycast(ray, out hit, 100))
             {
                 if (hit.collider.gameObject == null)
                     return;
-
-                //                if (hit.collider.gameObject.tag == "MainCamera" ||
-                //                hit.collider.gameObject.tag == "GameController")
-                //                {
-                //
-                //                }
-                //                else
-                //                {
-                //                    return;
-                //                }
 
                 hitPoint = hit.point;
             }

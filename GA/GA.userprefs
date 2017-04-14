@@ -1,8 +1,12 @@
 ﻿<Properties StartupItem="Assembly-CSharp.csproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Script\ObjMove.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Script/ShotControl.cs">
     <Files>
-      <File FileName="Assets\Script\ObjMove.cs" Line="10" Column="33" />
+      <File FileName="Assets/Script/ShotControl.cs" Line="42" Column="50" />
+      <File FileName="Assets/Script/VRCamera.cs" Line="15" Column="5" />
+      <File FileName="Assets/Script/Score.cs" Line="1" Column="1" />
+      <File FileName="Assets/Script/ObjMove.cs" Line="71" Column="15" />
+      <File FileName="Assets/Script/ShotMove.cs" Line="14" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
