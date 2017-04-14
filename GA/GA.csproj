@@ -61,64 +61,10 @@
     <Reference Include="UnityEditor">
       <HintPath>Library\UnityAssemblies\UnityEditor.dll</HintPath>
     </Reference>
-    <Reference Include="Assembly-UnityScript-firstpass">
-      <HintPath>Library\ScriptAssemblies\Assembly-UnityScript-firstpass.dll</HintPath>
-    </Reference>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="GA.Plugins.csproj">
-      <Project>{11161DA4-33FC-8FE7-502A-DC920AD4526C}</Project>
-      <Name>GA.Plugins</Name>
-    </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
-    <Compile Include="Assets\BattleDragon\Colosseum\Dust\ParticleSystems\Scripts\AfterburnerPhysicsForce.cs" />
-    <Compile Include="Assets\BattleDragon\Colosseum\Dust\ParticleSystems\Scripts\ExplosionFireAndDebris.cs" />
-    <Compile Include="Assets\BattleDragon\Colosseum\Dust\ParticleSystems\Scripts\ExplosionPhysicsForce.cs" />
-    <Compile Include="Assets\BattleDragon\Colosseum\Dust\ParticleSystems\Scripts\Explosive.cs" />
-    <Compile Include="Assets\BattleDragon\Colosseum\Dust\ParticleSystems\Scripts\ExtinguishableParticleSystem.cs" />
-    <Compile Include="Assets\BattleDragon\Colosseum\Dust\ParticleSystems\Scripts\FireLight.cs" />
-    <Compile Include="Assets\BattleDragon\Colosseum\Dust\ParticleSystems\Scripts\Hose.cs" />
-    <Compile Include="Assets\BattleDragon\Colosseum\Dust\ParticleSystems\Scripts\ParticleSystemMultiplier.cs" />
-    <Compile Include="Assets\BattleDragon\Colosseum\Dust\ParticleSystems\Scripts\SmokeParticles.cs" />
-    <Compile Include="Assets\BattleDragon\Colosseum\Dust\ParticleSystems\Scripts\WaterHoseParticles.cs" />
-    <Compile Include="Assets\BattleDragon\Dragons\Scripts\Camera\CameraFollow.cs" />
-    <Compile Include="Assets\BattleDragon\Dragons\Scripts\animator_controller.cs" />
-    <Compile Include="Assets\BattleDragon\Dragons\Scripts\animator_settor.cs" />
-    <Compile Include="Assets\BattleDragon\Dragons\Scripts\player_attack.cs" />
-    <Compile Include="Assets\BattleDragon\Dragons\Scripts\player_movement.cs" />
-    <Compile Include="Assets\BattleDragon\Scripts\CameraController.cs" />
-    <Compile Include="Assets\PyroParticles\Demo\DemoScript.cs" />
-    <Compile Include="Assets\PyroParticles\Demo\DemoScriptEditor.cs" />
-    <Compile Include="Assets\PyroParticles\Prefab\Script\FireBaseScript.cs" />
-    <Compile Include="Assets\PyroParticles\Prefab\Script\FireCollisionForwardScript.cs" />
-    <Compile Include="Assets\PyroParticles\Prefab\Script\FireConstantBaseScript.cs" />
-    <Compile Include="Assets\PyroParticles\Prefab\Script\FireLightScript.cs" />
-    <Compile Include="Assets\PyroParticles\Prefab\Script\FireProjectileScript.cs" />
-    <Compile Include="Assets\PyroParticles\Prefab\Script\MeteorSwarmScript.cs" />
-    <Compile Include="Assets\PyroParticles\Prefab\Script\SingleLineAttribute.cs" />
-    <Compile Include="Assets\Script\GameOver.cs" />
-    <Compile Include="Assets\Script\ObjCreate.cs" />
-    <Compile Include="Assets\Script\ObjMove.cs" />
-    <Compile Include="Assets\Script\Score.cs" />
-    <Compile Include="Assets\Script\ShotControl.cs" />
-    <Compile Include="Assets\Script\ShotMove.cs" />
-    <Compile Include="Assets\Script\VRCamera.cs" />
     <Compile Include="Assets\SimpleDogs\Demo\BtnScript.cs" />
     <Compile Include="Assets\SimpleDogs\Demo\DogController.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Assets\BattleDragon\Colosseum\Dust\ParticleSystems\ParticleSystemsGuidelines.txt" />
-    <None Include="Assets\BattleDragon\Colosseum\Dust\ParticleSystems\Shaders\PriorityParticleAdd.shader" />
-    <None Include="Assets\BattleDragon\Colosseum\Dust\ParticleSystems\Shaders\PriorityParticleAddSoft.shader" />
-    <None Include="Assets\BattleDragon\Colosseum\Dust\ParticleSystems\Shaders\PriorityParticleAlpha.shader" />
-    <None Include="Assets\BattleDragon\readme.txt" />
-    <None Include="Assets\PyroParticles\Prefab\Materials\AdditiveTintable.shader" />
-    <None Include="Assets\PyroParticles\Readme.txt" />
-    <None Include="Assets\Standard Assets\CrossPlatformInput\CrossPlatformInputGuidelines.txt" />
-    <None Include="Assets\Standard Assets\Particles\Sources\Shaders\Particle Alpha Blend (Queue +100).shader" />
-    <None Include="Assets\Standard Assets\Skyboxes\_skybox info.txt" />
-    <None Include="Assets\Standard Assets\Toon Shading\Sources\Shaders\Toony-Basic.shader" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="GenerateTargetFrameworkMonikerAttribute" />
